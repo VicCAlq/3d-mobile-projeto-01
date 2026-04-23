@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'sans',
   },
   botaoExemplo: {
-    backgroundColor: '#252730',
+    backgroundColor: '#788ce5ff',
     color: '#cdd',
     borderRadius: '10px',
     border: '0px solid #252730',
@@ -24,7 +24,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#151517',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
 });
-
