@@ -3,7 +3,7 @@ import styles from "../styles/main";
 export default function Cabecalho({ paginaAtual, onNavegar }) {
   return (
     <header style={styles.cabecalho}>
-      <span style={styles.cabecalhoLogo}>{"<OS CORTIÇEIROS"}</span>
+      <span style={styles.cabecalhoLogo}>{"OS CORTIÇEIROS"}</span>
       <nav style={styles.cabecalhoNav}>
         <button
           style={{

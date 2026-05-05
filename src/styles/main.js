@@ -1,15 +1,17 @@
 const styles = {
-  // ─── Global / Layout ──────────────────────────────────────────────
-  app: {
+
+ app: {
     minHeight: "100vh",
     display: "flex",
     flexDirection: "column",
     backgroundColor: "#0d0d0d",
     color: "#f0ece3",
     fontFamily: "'IBM Plex Mono', monospace",
+    width: "100%",        
+    overflowX: "hidden",  
   },
 
-  // ─── Cabecalho ────────────────────────────────────────────────────
+ 
   cabecalho: {
     display: "flex",
     justifyContent: "space-between",
@@ -51,7 +53,7 @@ const styles = {
     fontWeight: "700",
   },
 
-  // ─── Rodape ───────────────────────────────────────────────────────
+ 
   rodape: {
     marginTop: "auto",
     padding: "1.5rem 2.5rem",
@@ -73,7 +75,7 @@ const styles = {
     letterSpacing: "0.08em",
   },
 
-  // ─── Main (page wrapper) ──────────────────────────────────────────
+  
   main: {
     flex: 1,
     padding: "2.5rem",
@@ -83,7 +85,7 @@ const styles = {
     boxSizing: "border-box",
   },
 
-  // ─── Menu ─────────────────────────────────────────────────────────
+  
   menu: {
     display: "flex",
     gap: "1rem",
@@ -93,7 +95,7 @@ const styles = {
     borderBottom: "1px solid #2a2a2a",
   },
 
-  // ─── Botao ────────────────────────────────────────────────────────
+  
   botao: {
     display: "flex",
     flexDirection: "column",
@@ -140,7 +142,7 @@ const styles = {
     color: "#e8ff47",
   },
 
-  // ─── Card ─────────────────────────────────────────────────────────
+  
   cardsGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(500px, 1fr))",
@@ -192,7 +194,7 @@ const styles = {
     lineHeight: "1.5",
   },
 
-  // ─── Conteudo (Sobre a equipe) ────────────────────────────────────
+  
   conteudo: {
     maxWidth: "700px",
   },

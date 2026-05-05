@@ -1,4 +1,4 @@
-// Componente de exemplo — pode ser apagado após terminar a atividade.
+
 export default function Exemplo() {
   return (
     <div>

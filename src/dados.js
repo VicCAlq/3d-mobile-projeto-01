@@ -2,7 +2,7 @@ export const alunos = [
   {
     id: "aluno1",
     nome: "Cassiano",
-    foto: "/public/cassiano.jpeg",
+    foto: "/cassiano.jpeg",
     codigos: [
       {
         tipo: "facil",
@@ -68,7 +68,7 @@ export const resposta02 = frutas[frutas.length - 1]`,
   {
     id: "aluno2",
     nome: "Damascena",
-    foto: "/public/claudino.jpeg",
+    foto: "/claudino.jpeg",
     codigos: [
       {
         tipo: "facil",
@@ -141,7 +141,7 @@ const resposta07 = dias[2]`,
   {
     id: "aluno3",
     nome: "Guilherme",
-    foto: "/public/guigui.jpeg",
+    foto: "/guigui.jpeg",
     codigos: [
       {
         tipo: "facil",
@@ -208,7 +208,7 @@ export const resposta07 = maisDe6`,
   {
     id: "aluno4",
     nome: "William",
-    foto: "/public/william.jpeg",
+    foto: "/william.jpeg",
     codigos: [
       {
         tipo: "facil",
@@ -282,7 +282,7 @@ export const resposta09 = contarElementos`,
   {
     id: "aluno5",
     nome: "Ziv",
-    foto: "/public/ziv.jpeg",
+    foto: "/ziv.jpeg",
     codigos: [
       {
         tipo: "facil",
@@ -357,22 +357,22 @@ export const resposta04 = soma04`,
 export const membros = [
   {
     nome: "Cassiano",
-    descricao: "Contribuiu bastante, ajudou em todas as partes.",
+    descricao: "Contribuiu bastante e ajudou em todas as partes, principalmente no 'dados.js .",
   },
   {
     nome: "Damascena",
-    descricao: "Ficou responsável por dar uma adiantada no projeto em casa, também ajudou no geral.",
+    descricao: "Ficou responsável por dar uma adiantada no projeto em casa, também ajudou no geral, com enfoque no Rodapé e no Menu .",
   },
   {
     nome: "Guilherme",
-    descricao: "Codou a estrutura do app.",
+    descricao: "Criou e desenvolveu os arquivos da pasta 'pages' e também deu uma auxiliada geral.",
   },
   {
     nome: "William",
-    descricao: "Organizou as fotos, e também separou as questões que a gente foi dizendo.",
+    descricao: "Organizou as fotos e, criou e estruturou o código do arquivo 'dados.js' ",
   },
   {
     nome: "Ziv",
-    descricao: "Foi quem deu a ideia de como o app poderia ser",
+    descricao: "Foi quem deu a ideia de como o app poderia ser e ajudou nos arquivos Botão, Cabecalho e Card",
   },
 ];
