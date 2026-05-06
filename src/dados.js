@@ -357,22 +357,22 @@ export const resposta04 = soma04`,
 export const membros = [
   {
     nome: "Cassiano",
-    descricao: "Contribuiu bastante e ajudou em todas as partes, principalmente no 'dados.js .",
+    descricao: "Contribuiu bastante em todas as partes, principalmente no 'dados.js .",
   },
   {
     nome: "Damascena",
-    descricao: "Ficou responsável por dar uma adiantada no projeto em casa, também ajudou no geral, com enfoque no Rodapé e no Menu .",
+    descricao: "Adiantou o que conseguiu em casa, também ajudou no geral, com enfoque no Rodapé e no Menu e no 'main.js' .",
   },
   {
     nome: "Guilherme",
-    descricao: "Criou e desenvolveu os arquivos da pasta 'pages' e também deu uma auxiliada geral.",
+    descricao: "Criou e desenvolveu os arquivos da pasta 'pages' e também mexeu muito no 'main.js'.",
   },
   {
     nome: "William",
-    descricao: "Organizou as fotos e, criou e estruturou o código do arquivo 'dados.js' ",
+    descricao: "Organizou as fotos, e estruturou o código do arquivo 'dados.js' junto com Cassiano ",
   },
   {
     nome: "Ziv",
-    descricao: "Foi quem deu a ideia de como o app poderia ser e ajudou nos arquivos Botão, Cabecalho e Card",
+    descricao: "Foi quem deu a ideia de como o app poderia ser e ajudou nos arquivos Botão, Cabecalho e Card e configurou isso no 'main.js'.",
   },
 ];
