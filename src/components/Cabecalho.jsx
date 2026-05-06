@@ -5,12 +5,11 @@ import { View, Pressable, Text } from 'react-native'
 const estilosCabecalho = StyleSheet.create({
   cabecalho: {
     backgroundColor: "#333",
-    margin: "0px 0px 0px auto",
     height: "70px",
     width: "100vw",
-    display: "flex",
     flexDirection: "row",
-    alignContent: "center",
+    alignItems: "center",
+    justifyContent: "center",
     padding: "0px auto",
   },
   botaoCabecalho: {
@@ -26,9 +25,7 @@ const estilosCabecalho = StyleSheet.create({
   }
 })
 
-export default function Cabecalho({
-  paginaPrincipal, sobreEquipe, mudarPagina
-}) {
+export default function Cabecalho({ mudarPagina }) {
   const [selecionado, setSelecionado] = useState("principal")
 
   return (
@@ -36,34 +33,26 @@ export default function Cabecalho({
       <Pressable
         style={() => [
           estilosCabecalho.botaoCabecalho,
-          {
-            backgroundColor: selecionado !== "principal" ?
-              "#111" :
-              "#246"
-          }
+          { backgroundColor: selecionado === "principal" ? "#246" : "#111" }
         ]}
         onPress={() => {
-          mudarPagina(paginaPrincipal)
+          mudarPagina("principal")
           setSelecionado("principal")
         }}
       >
-        Página principal
+        <Text style={{ color: "#ddd" }}>Principal</Text>
       </Pressable>
       <Pressable
         style={() => [
           estilosCabecalho.botaoCabecalho,
-          {
-            backgroundColor: selecionado === "principal" ?
-              "#111" :
-              "#246"
-          }
+          { backgroundColor: selecionado === "sobreEquipe" ? "#246" : "#111" }
         ]}
         onPress={() => {
-          mudarPagina(sobreEquipe)
+          mudarPagina("sobreEquipe")
           setSelecionado("sobreEquipe")
         }}
       >
-        Sobre a Equipe
+        <Text style={{ color: "#ddd" }}>Sobre a Equipe</Text>
       </Pressable>
     </View>
   )
