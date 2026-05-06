@@ -42,7 +42,7 @@ export default function Cabecalho({
         setSelecionado("principal")
       }}
     >
-      Página principal
+      paginaPrincipal
     </Pressable>
     <Pressable 
       style={() => [
@@ -58,7 +58,7 @@ export default function Cabecalho({
         setSelecionado("sobreEquipe")
       }}
     >
-      Sobre a equipe
+      SobreEquipe
     </Pressable>
   </View>)
 }
