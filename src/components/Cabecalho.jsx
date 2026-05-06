@@ -21,7 +21,7 @@ export default function Cabecalho({ paginaAtual, onNavegar }) {
           }}
           onClick={() => onNavegar("sobre")}
         >
-          Sobre a Equipe
+          Nosso Time
         </button>
       </nav>
     </header>

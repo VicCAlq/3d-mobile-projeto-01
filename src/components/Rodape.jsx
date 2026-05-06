@@ -9,7 +9,7 @@ export default function Rodape() {
         rel="noopener noreferrer"
         style={styles.rodapeLink}
       >
-        ↗ Repositório do Git
+        ↗ GitHub
       </a>
       <p style={styles.rodapeTexto}>
         Desenvolvido por Time 3: Cassiano J., José Damascena, Guilherme M., William V., Ziv Coutinho.

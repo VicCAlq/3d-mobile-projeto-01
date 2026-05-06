@@ -3,7 +3,7 @@ import styles from "../styles/main";
 export default function Conteudo({ membros }) {
   return (
     <section style={styles.conteudo}>
-      <p style={styles.conteudoTitulo}>// sobre a equipe</p>
+      <p style={styles.conteudoTitulo}>sobre nosso time</p>
       <ul style={styles.conteudoLista}>
         {membros.map((membro) => (
           <li key={membro.nome} style={styles.conteudoItem}>
