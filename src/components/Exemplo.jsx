@@ -1,5 +1,5 @@
 import { View, Pressable, Text } from 'react-native'
-import { styles } from '../styles/main'
+import { styles } from './styles/main'
 import { useState } from 'react'
 
 export default function Exemplo({titulo, children}) {

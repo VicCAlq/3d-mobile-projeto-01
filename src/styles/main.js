@@ -1,15 +1,15 @@
 import { StyleSheet } from 'react-native';
 
+
 export const styles = StyleSheet.create({
   exemplo: {
     display: 'flex',
-  },
-  texto: {
-    color: '#ddd',
+  },texto: {
+    color: '#000000ff',
     fontFamily: 'sans',
-  },
-  botaoExemplo: {
-    backgroundColor: '#252730',
+    fontSize: 18,
+  }, botaoExemplo: {
+    backgroundColor: '#6b8592ff',
     color: '#cdd',
     borderRadius: '10px',
     border: '0px solid #252730',
@@ -20,11 +20,29 @@ export const styles = StyleSheet.create({
     padding: '10px',
     margin: '10px',
   },
-  container: {
+  container:{
     flex: 1,
-    backgroundColor: '#151517',
+    backgroundColor: '#caebffff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
-});
+rodape: {
+  position: 'absolute',
+  bottom: 0,
+  width: '100%',
+  padding: 12,
+  backgroundColor: '#627d8b',
+  alignItems: 'center',
+  flexDirection: 'column',
+},textoRodape: {
+  color: '#fff',
+  fontSize: 16,
+},textoBloco: {
+  fontSize: 18,
+  marginBottom: 10,
+  textAlign: 'left',
+  fontFamily: 'sans'
+},
 
+
+});

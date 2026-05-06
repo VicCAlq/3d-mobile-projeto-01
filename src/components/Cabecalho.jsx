@@ -1,70 +1,72 @@
 import { useState } from 'react'
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'
 import { View, Pressable, Text } from 'react-native'
+
 
 const estilosCabecalho = StyleSheet.create({
   cabecalho: {
-    backgroundColor: "#333",
-    margin: "0px 0px 0px auto",
-    height: "70px",
-    width: "100vw",
-    display: "flex",
-    flexDirection: "row",
-    alignContent: "center",
-    padding: "0px auto",
+    backgroundColor: '#8CB4C7',
+    marginBottom: "20px",
+    marginTop: "0px",
+    display: 'flex',
+    width: '100vw',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   botaoCabecalho: {
     backgroundColor: "#111",
-    color: "#ddd",
-    border: "2px solid #48a",
-    borderRadius: "10px",
-    padding: "10px",
-    margin: "10px",
+    color: "white",
+    padding: '10px',
+    borderRadius: '10px',
+    margin: '10px',
   },
   botaoCabecalhoSelecionado: {
-    backgroundColor: "#246",
+    backgroundColor: "#627d8b",
   }
+
+
 })
 
+
 export default function Cabecalho({
-  paginaPrincipal, sobreEquipe, mudarPagina
+  paginaInicial, sobreEquipe, mudarPagina
 }) {
   const [selecionado, setSelecionado] = useState("principal")
 
-  return (
-    <View style={estilosCabecalho.cabecalho}>
-      <Pressable
-        style={() => [
-          estilosCabecalho.botaoCabecalho,
-          {
-            backgroundColor: selecionado !== "principal" ?
-              "#111" :
-              "#246"
-          }
-        ]}
-        onPress={() => {
-          mudarPagina(paginaPrincipal)
-          setSelecionado("principal")
-        }}
-      >
-        Página principal
-      </Pressable>
-      <Pressable
-        style={() => [
-          estilosCabecalho.botaoCabecalho,
-          {
-            backgroundColor: selecionado === "principal" ?
-              "#111" :
-              "#246"
-          }
-        ]}
-        onPress={() => {
-          mudarPagina(sobreEquipe)
-          setSelecionado("sobreEquipe")
-        }}
-      >
-        Sobre a Equipe
-      </Pressable>
-    </View>
-  )
+
+  return(<View style={estilosCabecalho.cabecalho}>
+    <Pressable
+      style={() => [
+        estilosCabecalho.botaoCabecalho,
+        {
+          backgroundColor: selecionado === "principal"
+          ? "#627d8b"
+          : "#8CB4C7"
+        }
+      ]}
+      onPress={() => {
+        mudarPagina(paginaInicial)
+        setSelecionado("principal")
+      }}
+    >
+      PÁGINA PRINCIPAL
+    </Pressable>
+    <Pressable
+      style={() => [
+        estilosCabecalho.botaoCabecalho,
+        {
+          backgroundColor: selecionado === "sobreEquipe"
+          ? "#627d8b"
+          : "#8CB4C7"
+        }
+      ]}
+      onPress={() => {
+        mudarPagina(sobreEquipe)
+        setSelecionado("sobreEquipe")
+      }}
+    >
+      SOBRE A EQUIPE
+    </Pressable>
+  </View>)
 }
